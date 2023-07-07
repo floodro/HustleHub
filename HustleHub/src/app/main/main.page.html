@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button>
+      <ion-buttons slot="start">
+        <ion-back-button (click)="print()"> Back </ion-back-button>
+      </ion-buttons>
+    </ion-back-button>
+    <ion-title> HustleHub </ion-title>
+  </ion-toolbar>
+
+  <ion-toolbar>
+    <ion-searchbar animated="true" show-clear-button="always" clear-icon="trash-bin" value="Search" search-icon="search-circle"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-card (click)="print()">
+  <img src="../../assets/images/starbucks-1.jpg" />
+  <ion-card-header>
+    <ion-card-title> Barista </ion-card-title>
+    <ion-card-subtitle> Starbucks Coffee - Batangas Diversion </ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Here's a small text description for the card content. Nothing more, nothing less.
+  </ion-card-content>
+</ion-card>
+
+<ion-card (click)="print()">
+  <img src="../../assets/images/starbucks-2.jpg" />
+  <ion-card-header>
+    <ion-card-title> Barista </ion-card-title>
+    <ion-card-subtitle> Starbucks Coffee - Camp John Hay </ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    Here's a small text description for the card content. Nothing more, nothing less.
+  </ion-card-content>
+</ion-card>

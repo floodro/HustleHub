@@ -1,0 +1,48 @@
+    ion-content.login_wrapper {
+        --background: linear-gradient(#1da19f, #0e2e74);
+        position: relative;
+        text-align: center;
+    }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .logo {
+    width: 600px;
+    height: auto;
+    border-radius: 10px !important;
+  }
+
+  .container1 {
+    text-align: center;
+    position: relative;
+  }
+  
+  .text-container strong, p {
+    font-family: Poppins;
+    font-size: larger;
+    color: #FFF;
+  }
+
+  .input_forms {
+    text-align: center;
+    position: relative;
+    --color: #FFF;
+  }
+  
+  #username_input,
+  #password_input,
+  #confirm_password {
+    width: 100%;
+    margin: auto;
+    --background: transparent;
+  }
+  
+  .soc_med_icons {
+    margin-right: 30px; 
+  }
+  

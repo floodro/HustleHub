@@ -1,0 +1,6 @@
+Color Palette:
+
+Light Blue - #1DA19F
+Dark Blue - #0E2E74
+White - #FFFFFF
+Black - #111111

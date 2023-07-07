@@ -1,0 +1,18 @@
+ion-content.home_wrapper {
+  --background: linear-gradient(#1D196B, #81DFDE);
+  position: relative;
+  text-align: center;
+}
+
+.logo-container h2 {
+  font-family: Poppins;
+}
+
+#logo {
+  width: 600px;
+  height: auto;
+  border-radius: 10px !important;
+  position: relative;
+  right: 22%;
+  top: 0;
+}

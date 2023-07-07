@@ -1,0 +1,16 @@
+HustleHub - Enhancing Part-Time Job Opportunities for Students and Individuals through a Mobile Application
+
+Description:
+- HustleHub is a mobile job-search application that helps individuals look for part-time jobs and opportunities based on their 
+skills, and experiences.
+
+Possible Features:
+- Job Posting Hub (Users can look for specific jobs based on their preferences, experience, and skills)
+
+- Professional Profile (Job-seekers can have their portfolios and their credentials listed in their user profile, so 
+companies can have an easier time to identify whether or not the person seeking a job is qualified to handle
+a specific work.)
+
+- Worker Ratings (Companies can identify a worker's rating and leave a review depending on that person's performance,
+attitude, etc.)
+
