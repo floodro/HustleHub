@@ -1,11 +1,12 @@
 ion-content.home_wrapper {
-  --background: linear-gradient(#1D196B, #81DFDE);
+  --background: linear-gradient(#81DFDE, #1D196B);
   position: relative;
   text-align: center;
 }
 
 .logo-container h2 {
   font-family: Poppins;
+  --ion-text-shadow: 2px;
 }
 
 #logo {

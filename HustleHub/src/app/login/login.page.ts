@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { SharedService } from 'shared.service';
+import { AlertController } from '@ionic/angular';  
 
 @Component({
   selector: 'app-login',
@@ -10,13 +11,25 @@ import { SharedService } from 'shared.service';
 export class LoginPage implements OnInit {
 
   
-  constructor(private router: Router, private SharedService: SharedService) {}
+  constructor(private router: Router, private SharedService: SharedService, public alertCtrl: AlertController) {}
 
 
   public form = {
     email_address: "",
     password: "",
   }
+
+  async showAlert() {  
+    const alert = await this.alertCtrl.create({  
+      header: 'Alert',  
+      subHeader: 'SubTitle',  
+      message: 'This is an alert message',  
+      buttons: ['OK']  
+    });  
+    await alert.present();  
+    const result = await alert.onDidDismiss();  
+    console.log(result);  
+  }    
 
   ngOnInit() {
   }
@@ -30,10 +43,9 @@ export class LoginPage implements OnInit {
     const isValid =this.validateAccount();
     
     if(isValid){
-      
       this.router.navigateByUrl('/main');
     }else{
-      alert("Incorrect username or password, Please try again. ");
+      this.showAlert();
       this.router.navigateByUrl('/login');
      
     }

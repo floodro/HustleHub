@@ -1,38 +1,58 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-back-button>
-      <ion-buttons slot="start">
-        <ion-back-button (click)="print()"> Back </ion-back-button>
-      </ion-buttons>
-    </ion-back-button>
-    <ion-title> HustleHub </ion-title>
-  </ion-toolbar>
+<ion-app>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title> HustleHub </ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+</ion-app>
 
-  <ion-toolbar>
-    <ion-searchbar animated="true" show-clear-button="always" clear-icon="trash-bin" value="Search" search-icon="search-circle"></ion-searchbar>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <ion-searchbar animated="true" show-clear-button="always" clear-icon="trash-bin" value="Search" search-icon="search-circle"></ion-searchbar>
+  <ion-card>
+    <img src="../../assets/images/taskus-1.jpeg" />
+    <ion-card-header>
+      <ion-card-title> Junior Software Engineer </ion-card-title>
+      <ion-card-subtitle> TaskUs - Batangas City Diversion Road </ion-card-subtitle>
+    </ion-card-header>
+      
+    <ion-card-content>
+      Responsible for designing, developing, and maintaining software applications and systems. 
+    </ion-card-content>
+  </ion-card>
+      
+  <ion-card>
+    <img src="../../assets/images/starbucks-2.jpg" />
+    <ion-card-header>
+      <ion-card-title> Barista </ion-card-title>
+      <ion-card-subtitle> Starbucks Coffee - Batangas City Diversion Road </ion-card-subtitle>
+    </ion-card-header>
+      
+    <ion-card-content>
+      Provides exceptional coffee and beverage experiences to customers while creating and serving a variety of hot and cold beverages.
+    </ion-card-content>
+  </ion-card>
 
-<ion-card (click)="print()">
-  <img src="../../assets/images/starbucks-1.jpg" />
-  <ion-card-header>
-    <ion-card-title> Barista </ion-card-title>
-    <ion-card-subtitle> Starbucks Coffee - Batangas Diversion </ion-card-subtitle>
-  </ion-card-header>
-
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
-
-<ion-card (click)="print()">
-  <img src="../../assets/images/starbucks-2.jpg" />
-  <ion-card-header>
-    <ion-card-title> Barista </ion-card-title>
-    <ion-card-subtitle> Starbucks Coffee - Camp John Hay </ion-card-subtitle>
-  </ion-card-header>
-
-  <ion-card-content>
-    Here's a small text description for the card content. Nothing more, nothing less.
-  </ion-card-content>
-</ion-card>
+  <ion-card> 
+    <img src="../../assets/images/mcdo-rosario-1.jpg" />
+    <ion-card-header>
+      <ion-card-title> Crew Member  </ion-card-title>
+      <ion-card-subtitle> McDonalds - Rosario </ion-card-subtitle>
+    </ion-card-header>
+      
+    <ion-card-content>
+      Greets customers with a smile and maintains a fast speed of service, especially during rush hour.
+    </ion-card-content>
+  </ion-card>
+</ion-content>
