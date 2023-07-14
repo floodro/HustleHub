@@ -1,0 +1,64 @@
+<ion-content [fullscreen]="true">
+  <form (ngSubmit)="submitForm()">
+    <div id="container1">
+      <strong>Application Form</strong>
+      <p>Enter your Credentials.</p>
+
+      <ion-item id="FullName">
+        <ion-input
+          label="Full Name:"
+          placeholder="Enter your FullName"
+          color="white"
+          [(ngModel)]="applicant.full_name"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item id="Birthdate">
+        <ion-input
+          label="Birthdate:"
+          placeholder="Enter your Birthdate"
+          type="DD/MM/YY"
+          color="white"
+          [(ngModel)]="applicant.birth_date"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item id="phone_number">
+        <ion-input
+          label="Contact Number:"
+          placeholder="Enter your contact number:"
+          type="Phone number"
+          color="white"
+          [(ngModel)]="applicant.phone_number"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item id="email_address">
+        <ion-input
+          label="Email address:"
+          placeholder="Enter your Email:"
+          type="Email"
+          color="white"
+          [(ngModel)]="applicant.email_address"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-textarea
+          label="Qualifications:"
+          placeholder="Enter your Qualifications here"
+          [autoGrow]="true"
+          value=""
+          type="Qualifications"
+          color="white"
+          [(ngModel)]="applicant.qualifications"
+        ></ion-textarea>
+      </ion-item>
+
+      <div class="ion-padding">
+        <ion-button expand="full" type="submit">Submit</ion-button>
+        <ion-button expand="full" color="danger" (click)="cancelForm()">Cancel</ion-button>
+      </div>
+    </div>
+  </form>
+</ion-content>
