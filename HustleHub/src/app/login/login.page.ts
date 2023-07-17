@@ -19,11 +19,11 @@ export class LoginPage implements OnInit {
     password: "",
   }
 
-  async showAlert() {  
+  async wrongPassword() {  
     const alert = await this.alertCtrl.create({  
-      header: 'Alert',  
-      subHeader: 'SubTitle',  
-      message: 'This is an alert message',  
+      header: 'Wait a minute!',  
+      subHeader: 'Please try again.',  
+      message: 'You have entered an incorrect username / password.',  
       buttons: ['OK']  
     });  
     await alert.present();  
@@ -42,10 +42,12 @@ export class LoginPage implements OnInit {
   checkLogin() {
     const isValid =this.validateAccount();
     
-    if(isValid){
+    if(isValid) {
       this.router.navigateByUrl('/main');
-    }else{
-      this.showAlert();
+    }
+    
+    else {
+      this.wrongPassword();
       this.router.navigateByUrl('/login');
      
     }

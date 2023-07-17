@@ -1,22 +1,10 @@
-<ion-app>
-  <ion-menu contentId="main-content">
-    <ion-header>
-      <ion-toolbar color="tertiary">
-        <ion-title>Menu Content</ion-title>
-      </ion-toolbar>
-    </ion-header>
-  </ion-menu>
-  <div class="ion-page" id="main-content">
-    <ion-header>
-      <ion-toolbar>
-        <ion-buttons slot="start">
-          <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title> HustleHub </ion-title>
-      </ion-toolbar>
-    </ion-header>
-  </div>
-</ion-app>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title id="title-logo"> HustleHub </ion-title>
+    </ion-toolbar>
+  </ion-header>
+</div>
 
   <ion-content>
     <ion-card id="first">
@@ -49,7 +37,7 @@
       <img src="../../assets/images/mcdo-rosario-1.jpg" />
       <ion-card-header>
         <ion-card-title> Crew Member  </ion-card-title>
-        <ion-card-subtitle> McDonalds - Rosario </ion-card-subtitle>
+        <ion-card-subtitle> McDonalds - Rosario, Batangas </ion-card-subtitle>
       </ion-card-header>
         
       <ion-card-content>
@@ -58,4 +46,23 @@
       <ion-button id="apply_btn" shape="round" [routerLink] = "['/application']"> Apply Now </ion-button>
     </ion-card>
   </ion-content>  
+
+  <div class="tabs">
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home">
+        <ion-icon name="arrow-back-outline"></ion-icon>
+        Back
+      </ion-tab-button>
+
+      <ion-tab-button tab="home" [routerLink] = "['/home']">
+        <ion-icon name="home"></ion-icon>
+        Home
+      </ion-tab-button>
+
+      <ion-tab-button tab="profile" [routerLink] = "['/profile']">
+        <ion-icon name="person-circle-outline"></ion-icon>
+        Profile
+      </ion-tab-button>
+    </ion-tab-bar>
+  </div>
 

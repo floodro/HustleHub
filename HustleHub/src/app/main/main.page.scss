@@ -1,20 +1,30 @@
-:root {
-    scroll-behavior: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 ion-content {
     --background: transparent;
 }
 
-#first {
-    margin-top: 80px;
+ion-card {
+    --background: linear-gradient(#1D196B, #81DFDE);
+    font-family: Poppins;
+    --color: #111;
 }
-//ion-searchbar {
-  //  margin-top: 50px !important;
-//}
+
+ion-card-title {
+    font-family: Poppins;
+    --color: #fff;
+}
+
+ion-card-subtitle {
+    font-family: sans-serif;
+    --color: #111;
+}
+
+ion-tabs {
+    --background: #111;
+}
+
+#first {
+    margin-top: 60px;
+}
 
 #apply_btn {
     --background:#387ef5!important ;
