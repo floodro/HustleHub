@@ -19,8 +19,9 @@ If you do this, there might be an issue where if you run the "ionic-serve" comma
 npm install
 ```
 
-### Installation
+### Installation of the Ionic Framework and the Ionic CLI
 
+Since we're running the application directly from Ionic, we must make sure that we already have Ionic itself setup.
 ```
 npm install -g @ionic/cli
 ```
