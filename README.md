@@ -11,7 +11,11 @@ HustleHub is a job posting mobile application that helps students and individual
 
 # Running the Application
 
-This application was made using the Ionic framework, and The Ionic command line interface (CLI). In order for you to successfully run the application, you must install Ionic first on your computer.
+This application was made using the Ionic framework, and The Ionic command line interface (CLI). In order for you to successfully run the application, you must install Ionic first on your computer. If you do this, there might be an issue where if you run the "ionic-serve" command, it will throw an error. So make sure to run the command below first so that it can run properly.
+
+'''
+npm install
+'''
 
 ### Installation
 
