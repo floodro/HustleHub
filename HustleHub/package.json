@@ -63,6 +63,11 @@
     "karma-jasmine-html-reporter": "~2.0.0",
     "ts-node": "^8.3.0",
     "typescript": "~5.0.2"
+    
+  },
+  "scripts": {
+    "start": "ionic serve",
+    "run-app": "ionic cordova run --device"
   },
   "description": "An Ionic project"
 }
