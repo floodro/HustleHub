@@ -4,3 +4,17 @@ Light Blue - #1DA19F
 Dark Blue - #0E2E74
 White - #FFFFFF
 Black - #111111
+
+Ateneo Blue - #003A6B
+Blue Sapphire - #1B5886
+Queen Blue - #3776A1
+Silver Lake Blue - #5293BB
+Iceberg - #6EB1D6
+Baby Blue - #89CFF1
+
+Dark Midnight Blue - #003366
+Dark Cerulean - #174978
+B’dazzled Blue - #2F5F8A
+Queen Blue - #46769B
+Rackley - #5E8CAD
+Air Superiority Blue - #75A2BF
