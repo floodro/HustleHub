@@ -6,10 +6,14 @@
 <div class="login">
   <div class="text-container">
     <strong> Welcome back! </strong>
-    <p> Login to your account here. </p>
+    <p> Sign up your account here. </p>
   </div>
 
   <div class="input-forms">
+    <ion-item id="name_input">
+      <ion-input labelPlacement="stacked" label="Name: " fill="outline" placeholder="Name: " color="white" [(ngModel)]="form.name"></ion-input>
+    </ion-item>
+
     <ion-item id="username_input">
       <ion-input labelPlacement="stacked" label="Enter an e-mail address:" fill="outline" placeholder="Enter an email address" color="white" [(ngModel)]="form.email_address"></ion-input>
     </ion-item>
@@ -23,10 +27,11 @@
     </ion-item>
   </div>
 
+
   <br>
   <div class="buttons">
     <ion-button [routerLink] = "['/signup']" id="signup_btn" shape="round" color="primary" (click)="add_accounts()"> Sign-up </ion-button>
-    <ion-button [routerLink] = "['/login']" id="login_btn" shape="round" color="primary"> Go to Login </ion-button>
+    <ion-button [routerLink] = "['/login']" id="login_btn" shape="round" color="primary"> Sign-in </ion-button>
   </div>
 
   <br>

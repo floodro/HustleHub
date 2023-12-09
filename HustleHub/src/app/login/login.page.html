@@ -20,10 +20,16 @@
     <br>
     <div class="buttons">
       <ion-button [routerLink] = "['/main']" id="login_btn" shape="round" (click)="checkLogin()" color="primary"> Login </ion-button>
-      <ion-button [routerLink] = "['/signup']" id="signup_btn" shape="round" color="primary"> Sign-up </ion-button>
-      <p> <a href="sign-in.html"> Forgot password? </a> </p>
+      <ion-button [routerLink] = "['/signup']" id="signup_btn" shape="round" color="primary"> Continue </ion-button>
+      <p> <a href="/sign-in.html"> Forgot password? </a> </p>
+
+      <div class="buttons">
+      <ion-button [routerLink] ="['/sign-in']" id="sign-in_btn" shape="round" color="primary">Sign-up</ion-button>
+      <p> <a href ="/HustleHub/src/app/signup/signup.page.html"> Don't have an account? </a> </p>
+
+      <p> By clicking Continue, you agree to HustleHub's User Agreement, Privacy Policy, and Cookie Policy.</p>
     </div>
-    
+
     <div class="soc_med_icons">
       <ion-button color="dark" id="fb_logo">
         <ion-icon name="logo-facebook"></ion-icon>
