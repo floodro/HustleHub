@@ -4,9 +4,7 @@ HustleHub is a job posting mobile application that helps students and individual
 # Team Members:
 ```
  Salamat, Billymer L.
- Barcelona, Nielle E.
  Rosales, Leanne Cassandra J.
- Calalo, Homer M.
 ```
 
 # Running the Application
