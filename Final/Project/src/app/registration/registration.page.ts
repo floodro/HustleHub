@@ -15,12 +15,6 @@ export class RegistrationPage {
   password: string;
   confirmPassword: string;
   userName: string;
-  selectedJobType: string;
-
-  jobTypes = [
-    { label: 'Administrative Work', value: 'admin' },
-    { label: 'Hospitality', value: 'hospitality' },
-  ];
 
   constructor(
     private auth: AngularFireAuth,

@@ -1,35 +1,30 @@
-ion-content {
+// main.page.scss
+
+ion-header {
+    --ion-background-color: transparent;
+    --ion-border-color: transparent;
+  }
+  
+  ion-title {
+    font-family: "Montserrat";
+    text-align: center;
+    color: var(--ion-color-success);
+  }
+  
+  ion-toolbar {
     --background: transparent;
-}
-
-ion-card {
-    --background: #fff;
-    font-family: Poppins;
-    --color: #111;
-}
-
-ion-card-title {
-    font-family: Poppins;
-    --color: #111;
-}
-
-ion-card-subtitle {
-    font-family: sans-serif;
-    --color: #111;
-}
-
-ion-tabs {
-    --background: #111;
-}
-
-#first {
-    margin-top: 60px;
-}
-
-#apply_btn {
-    --background:#387ef5!important ;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-    margin-left: 130px;
-}
+    --border-style: none;
+  }
+  
+  ion-content {
+    --background: var(--ion-color-tertiary);
+  }
+  
+  ion-searchbar {
+    --background: #ffffff; // Set your desired background color for the search bar
+  }
+  
+  ion-item {
+    background-color: #ffffff; // Set your desired background color for job postings
+  }
+  

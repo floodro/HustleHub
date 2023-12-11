@@ -1,0 +1,24 @@
+<ion-content>
+  <div class="flex-center">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title color="success">Which types of job do you want to look for?</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-radio-group [(ngModel)]="selectedJobType">
+          <ion-item *ngFor="let jobType of jobTypes">
+            <ion-label>{{ jobType.label }}</ion-label>
+            <ion-radio [value]="jobType.value"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
+      </ion-card-content>
+    </ion-card>    
+
+    <ion-fab vertical="bottom" horizontal="end" style="margin-bottom: 10px; margin-right: 42%;"> 
+      <ion-fab-button [routerLink]="['/registration']">
+        <ion-icon name="chevron-forward"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </div>
+</ion-content>

@@ -1,5 +1,11 @@
+*
+{
+    font-family: Verdana;
+}
+
 ion-card-title
 {
+    font-family: "Montserrat";
     text-align: center;
 }
 
@@ -13,9 +19,9 @@ ion-content
     --background: var(--ion-color-tertiary);
 }
 
-ion-button
+ion-button[color="dark"]
 {
-    margin: 5px;
+    text-transform: initial;
 }
 
 ion-item
