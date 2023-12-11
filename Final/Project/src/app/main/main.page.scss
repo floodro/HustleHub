@@ -1,0 +1,35 @@
+ion-content {
+    --background: transparent;
+}
+
+ion-card {
+    --background: #fff;
+    font-family: Poppins;
+    --color: #111;
+}
+
+ion-card-title {
+    font-family: Poppins;
+    --color: #111;
+}
+
+ion-card-subtitle {
+    font-family: sans-serif;
+    --color: #111;
+}
+
+ion-tabs {
+    --background: #111;
+}
+
+#first {
+    margin-top: 60px;
+}
+
+#apply_btn {
+    --background:#387ef5!important ;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-left: 130px;
+}

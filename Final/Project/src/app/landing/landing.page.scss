@@ -1,0 +1,26 @@
+ion-content {
+    --background: var(--ion-color-tertiary); 
+    
+  
+    ion-title {
+      font-family: "Montserrat";
+      color: white; 
+    }
+
+    #main {
+        font-size: 50px;
+        color: var(--ion-color-success);
+    }
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 70%;
+  }
+  
+  ion-fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+  }
+  

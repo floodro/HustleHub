@@ -1,0 +1,19 @@
+*
+{
+    font-family: Verdana;
+}
+
+ion-button[color="dark"]
+{
+    text-transform: initial;
+}
+
+ion-content
+{
+    --background: var(--ion-color-tertiary);
+}
+
+ion-card-title
+{
+    font-family: "Montserrat";
+}
