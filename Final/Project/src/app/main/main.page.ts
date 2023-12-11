@@ -12,15 +12,54 @@ export class MainPage {
   jobPostings = [
     {
       title: 'Software Developer',
-      companyName: 'Tech Co.',
-      companyLogo: 'logo-github-large',
+      companyName: 'Amazon',
+      companyLogo: 'logo-amazon',
     },
     {
-      title: 'Marketing Specialist',
-      companyName: 'Marketing Pro',
-      companyLogo: 'logo-twitter-large',
+      title: 'Network Administrator',
+      companyName: 'Facebook',
+      companyLogo: 'logo-facebook',
     },
-    // Add more job postings as needed
+    {
+      title: 'Front-end Engineer',
+      companyName: 'Apple',
+      companyLogo: 'logo-apple',
+    },
+    {
+      title: 'Back-end Engineer',
+      companyName: 'Twitter',
+      companyLogo: 'logo-twitter',
+    },
+    {
+      title: 'Data Analyst',
+      companyName: 'Facebook',
+      companyLogo: 'logo-facebook',
+    },
+    {
+      title: 'Full-stack Developer',
+      companyName: 'Google',
+      companyLogo: 'logo-google',
+    },
+    {
+      title: 'Game Designer',
+      companyName: 'Twitter',
+      companyLogo: 'logo-twitter',
+    },
+    {
+      title: 'Database Administrator',
+      companyName: 'Discord',
+      companyLogo: 'logo-discord',
+    },
+    {
+      title: 'Cloud Engineer',
+      companyName: 'Google',
+      companyLogo: 'logo-google',
+    },
+    {
+      title: 'UX Designer',
+      companyName: 'Amazon',
+      companyLogo: 'logo-amazon',
+    },
   ];
 
   constructor() {}

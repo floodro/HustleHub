@@ -1,0 +1,57 @@
+
+
+ion-content {
+  --background: var(--ion-color-tertiary)
+}
+
+ion-card {
+  margin: 20px;
+}
+
+ion-card-title
+{
+  font-family: "Montserrat";
+}
+
+ion-avatar.profile-picture {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+ion-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ion-item {
+  --ion-background-color: #f5f5f5;
+  --ion-color: #000;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+ion-item ion-input {
+  padding: 10px;
+}
+
+ion-button {
+  margin-top: 10px;
+}
+
+ion-button[expand='full'] {
+  --ion-background-color: #007bff;
+  --ion-text-color: #fff;
+  margin-top: 20px;
+}
+
+ion-button.edit-button {
+  --ion-background-color: transparent;
+  --ion-text-color: #000;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

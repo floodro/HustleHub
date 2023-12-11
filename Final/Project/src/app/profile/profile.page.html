@@ -1,0 +1,79 @@
+<ion-content [fullscreen]="true">
+  <div class="flex-center">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title color="success">My Profile</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-avatar class="profile-picture" *ngIf="userData.profilePicture">
+        <img [src]="userData.profilePicture" />
+      </ion-avatar>
+
+      <ion-item *ngIf="!isEditing">
+        <ion-label>Name</ion-label>
+        <ion-input [value]="userData.name" disabled></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="!isEditing">
+        <ion-label>Email</ion-label>
+        <ion-input [value]="encryptEmail(userData.email)" disabled></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="isEditing">
+        <ion-label>Name</ion-label>
+        <ion-input [(ngModel)]="userData.name"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="isEditing">
+        <ion-label>Email</ion-label>
+        <ion-input [(ngModel)]="userData.email"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="isEditing">
+        <ion-label>Contact Number</ion-label>
+        <ion-input [(ngModel)]="userData.contact_number"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="!isEditing">
+        <ion-label>Contact Number</ion-label>
+        <ion-input [(ngModel)]="userData.contact_number" disabled></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="isEditing">
+        <ion-label>Home Address</ion-label>
+        <ion-input [(ngModel)]="userData.address"></ion-input>
+      </ion-item>
+
+      <ion-item *ngIf="!isEditing">
+        <ion-label>Home Address</ion-label>
+        <ion-input [(ngModel)]="userData.address" disabled></ion-input>
+      </ion-item>
+
+      <ion-button *ngIf="!isEditing" expand="full" shape="round" (click)="editProfile()">Edit Profile</ion-button>
+      <ion-button *ngIf="isEditing" expand="full" shape="round" (click)="saveUserData()">Save Changes</ion-button>
+
+      <ion-button expand="full" shape="round" (click)="fileInput.click()">Upload Picture</ion-button>
+
+      <ion-item *ngIf="userData.profilePicture">
+        <ion-button slot="end" shape="round" (click)="clearProfilePicture()">Clear Photo</ion-button>
+      </ion-item>
+
+      <ion-button expand="full" shape="round" (click)="resumeInput.click()">Upload Resume</ion-button>
+
+      <ion-item *ngIf="userData.resume">
+        <ion-button slot="end" shape="round" (click)="clearResume()">Clear Resume</ion-button>
+      </ion-item>
+
+      <ion-item *ngIf="userData.resume">
+        <ion-label>Resume</ion-label>
+        <ion-button slot="end" (click)="viewResume()">View</ion-button>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <input type="file" accept="image/*" (change)="onPictureUpload($event)" hidden #fileInput>
+
+  <input type="file" accept=".pdf" (change)="onResumeUpload($event)" hidden #resumeInput>
+</div>
+</ion-content>

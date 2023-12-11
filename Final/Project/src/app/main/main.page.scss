@@ -1,30 +1,49 @@
-// main.page.scss
-
 ion-header {
-    --ion-background-color: transparent;
-    --ion-border-color: transparent;
-  }
-  
-  ion-title {
-    font-family: "Montserrat";
-    text-align: center;
-    color: var(--ion-color-success);
-  }
-  
-  ion-toolbar {
-    --background: transparent;
-    --border-style: none;
-  }
-  
-  ion-content {
-    --background: var(--ion-color-tertiary);
-  }
-  
-  ion-searchbar {
-    --background: #ffffff; // Set your desired background color for the search bar
-  }
-  
-  ion-item {
-    background-color: #ffffff; // Set your desired background color for job postings
-  }
-  
+  --ion-background-color: transparent;
+  --ion-border-color: transparent;
+}
+
+ion-title {
+  font-family: "Montserrat";
+  text-align: center;
+  color: var(--ion-color-success);
+}
+
+ion-toolbar {
+  --background: transparent;
+  --border-style: none;
+}
+
+ion-content {
+  --background: var(--ion-color-tertiary);
+}
+
+ion-searchbar {
+  --background: #ffffff;
+}
+
+ion-item {
+  background-color: #ffffff;
+}
+
+.job-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 7px;
+  background-color: white;
+}
+
+.job-details {
+  text-align: left;
+}
+
+ion-label
+{
+  margin-left: 15px;
+}

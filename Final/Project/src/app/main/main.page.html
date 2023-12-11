@@ -7,19 +7,17 @@
 </ion-header>
 
 <ion-content>
-  <!-- Searchbar -->
   <ion-searchbar placeholder="Search for jobs"></ion-searchbar>
 
-  <!-- Job Postings -->
   <ion-list>
-    <ion-item *ngFor="let job of jobPostings">
+    <div *ngFor="let job of jobPostings" class="job-container">
       <ion-thumbnail slot="start">
-        <ion-icon [name]="job.companyLogo"></ion-icon>
+        <img class="company-logo" [src]="'assets/' + job.companyLogo + '.svg'" alt="{{ job.companyName }} Logo">
       </ion-thumbnail>
       <ion-label>
         <h2>{{ job.title }}</h2>
         <p>{{ job.companyName }}</p>
       </ion-label>
-    </ion-item>
+    </div>
   </ion-list>
 </ion-content>
